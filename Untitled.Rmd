@@ -1,0 +1,23 @@
+---
+title: "attempt_01"
+author: "Kaylhan Garcia"
+date: "2024-02-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(dplyr)
+head(diamonds)
+```
+
+```{r}
+diamonds %>% 
+  select("price","x","y","z") %>%
+  filter(price>17000)
+diamonds
+```
